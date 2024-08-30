@@ -408,11 +408,13 @@ For this analysis, we'll prioritize analysing the metrics that are important in 
 ## Validation  
 
 #### Calculation breakdown
-Product cost = $5, Campagin budget = $50,000, Conmversion rate = 2%
-Potential revenue = Average_views_per_video * 0.02(conversion rate) * $5 (product cost)
-**Potential Profit **= Revenue - $50,000(campaign budget)
+Product cost = $5
+Campaign budget = $50,000
+Conmversion rate = 2%
+Potential revenue = Average_views_per_video x 0.02(conversion rate) x $5 (product cost)
+Potential Profit = Revenue - $50,000(campaign budget)
 
-### Reconcilloiation between SQL results and Manual Calculation
+### Reconciliation between SQL results and Manual Calculation
 1. NoCopyrightSounds 
 - Average views per video = 6.92 million
 - Potential revenue per video = 6.92 million x 2% conversion rate x $5 = $692,000
@@ -452,9 +454,9 @@ Campaign idea = product placement
 Best option from category: Dan Rhodes
 1. NoCopyrightSounds
 - **Net profit = $642,000**
-3. Dan TDM
+2. Dan TDM
 - **Net profit = $484,000**
-4. Dan Rhodes
+3. Dan Rhodes
 - **Net profit = $1,065,000**
 
 ### 2. Youtubers with the most videos uploaded
@@ -462,25 +464,25 @@ Campaign idea = sponsored video series
 
 1. GRM Daily
 - **Net profit = -$26,000 (potential loss)**
-b. **Manchester City**
-- **Net profit = $1,000 (break even)**
-b. **Yogscast**
+2. Manchester City
+- **Net profit = $1,000 (break-even)**
+3. Yogscast
 - **Net profit = $21,000 (profit)**
 
 Best option from category: Yogscast
 
 ### 3.  Youtubers with the most views 
 Campaign idea = Influencer marketing 
-a. DanTDM
-- **Net profit =  $484,000**
-b. Dan Rhodes
-- **Net profit = $1,065,000**
-c. Mister Max
-- **Net profit = $1,356,000**
+1. DanTDM
+**Net profit =  $484,000**
+2. Dan Rhodes
+**Net profit = $1,065,000**
+3. Mister Max
+**Net profit = $1,356,000**
 
 Best option from category: Mister Max
 
-### SQL Results for the most vs least profitbale profitbale
+### SQL Results for the most vs least  profitable
 |Top 25 Most Profitable  Youtubers|
 |---------------|
 |![Most profitable](assets/images/most_profitable_youtubers.PNG)|
@@ -499,11 +501,11 @@ We discovered that
 
 
 1. **Most Profitable youtubers:** The youtubers with the most potential for profits are influencers, celebrities and musical channels.
-2.**Least Profitable youtubers:** The youtubers the least potential for profits/loss are News channels and Foootball channels.
-3. **NoCopyrightSOunds, Dan Rhodes, and DanTDM** are the channels with the most subscribers in the UK
+2. **Least Profitable youtubers:** The youtubers the least potential for profits/loss are News channels and Foootball channels.
+3. **NoCopyrightSounds, Dan Rhodes, and DanTDM** are the channels with the most subscribers in the UK
 4. **GRM Daily, Man City, and Yogscast** are the channels with the most videos uploaded
 5. **DanTDM, Dan Rhodes and Mister Max** are the channels with the most views
-6. Entertainment and music channels are useful for broader reach, as the channels posting consistently on their platforms generatE the most engagement. 
+6. **Entertainment and music channels** are useful for broader reach, as the channels posting consistently on their platforms generate the most engagement. 
 
 
 
