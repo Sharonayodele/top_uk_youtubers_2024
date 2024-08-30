@@ -1,33 +1,31 @@
 # Data Portfolio: SQL to Power BI to Excel
 
+![SQL to powerbi casestudy](assets/images/kaggle_to_powerbi.gif)
 
-![sql-to-powerbi-t0-excel](assets/images/kaggle_to_powerbi (1).gif)
-
-
-<content> # Table of contents </content>
+# Table of contents 
 - [Objective](#objective)
 - [Data Source](#data-source)
 - [Stage](#stages)
 - [Design](#design)
     - [Tools](#tools)
-- Development(#development)
-    - [Pseduocode](#pseduocode)
+- [Development](#development)
+    - [Pseudocode](#pseudocode)
     - [Data Exploration](#data-exploration)
     - [Data Cleaning](#data-cleaning)
-    - [Transform the Data](#Transform-the-Data)
-    - [Create the SQL view](#Create-the-SQL-view)
+    - [Data Transformation](#data-transformation)
+    - [Create the SQL view](#create-the-sql-view)
 - [Data Quality Test](#data-quality-test)
 - [Visualization](#visualization)
   - [Results](#results)
-  - [DAX Measures(#dax-measures)
+  - [DAX Measures](#dax-measures)
 - [Analysis](#analysis)
   - [Findings](#findings)
   - [Validation](#validation)
   - [Discovery](#discovery)
 - [Recommendation](#recommendation)
-  - [Potential ROI](#potential ROI)
-  - [Potential Course of Actions](#Potential-courses-of-actions)
-  - [Conclusion](#conclusion)
+  - [Potential ROI](#potential-roi)
+  - [Action Plan](#action-plan)
+
  
 
 # Objective  
@@ -127,9 +125,9 @@ Some of the data visuals that may be appropriate for answering our questions inc
 8. Write the documentation + commentary
 9. Publish the data to GitHub Pages
 
-## Data exploration notes
+### Data Exploration
 
-This is the stage where you have a scan of what's in the data including errors, inconsistencies, or corrupted characters, etc  
+This is the stage where you have a scan of what's in the data including errors, inconsistencies, corrupted characters, etc  
 
 
 - Initial observations 
@@ -138,8 +136,6 @@ This is the stage where you have a scan of what's in the data including errors, 
 2. The first column contains the channel ID with what appears to be channel IDS, which are separated by a @ symbol - we need to extract the channel names from this.
 3. Some of the cells and header names are in a different language - we need to confirm if these columns are needed, and if so, we need to fix them.
 4. We have more data than we need, so some of these columns would need to be removed
-
-
 
 
 
@@ -174,7 +170,7 @@ Here's the tabular representation of the expected schema of the clean data:
 3. Rename columns using aliases
 
 
-### Transform the data 
+## Data Transformation 
 
 ```SQL
 /*
@@ -199,12 +195,13 @@ SELECT
 ```
 ![Extract the user name from the nombre column](assets/images/youtube_charindex3.PNG)
 
-Create an SQL view and store the transformed data
+### Create the SQL view
+store the transformed data
 
 ![SQL view and transformed data](assets/images/youtube_subquery4.PNG)
 
 
-# Testing
+# Data quality test
 Here are the data quality tests conducted:
 - Row check: 4
 - Column check: 100
@@ -503,21 +500,20 @@ We discovered that
 
 1. **Most Profitable youtubers:** The youtubers with the most potential for profits are influencers, celebrities and musical channels.
 2.**Least Profitable youtubers:** The youtubers the least potential for profits/loss are News channels and Foootball channels.
-3. **NoCopyrightSOunds, Dan Rhodes and DanTDM** are the channnels with the most subscribers in the UK
-4. **GRM Daily, Man City and Yogscast** are the channels with the most videos uploaded
-5. **DanTDM, Dan RHodes and Mister Max** are the channels with the most views
-6. Entertainment and music channels are useful for broader reach, as the channels posting consistently on their platforms are generating the most engagement. 
+3. **NoCopyrightSOunds, Dan Rhodes, and DanTDM** are the channels with the most subscribers in the UK
+4. **GRM Daily, Man City, and Yogscast** are the channels with the most videos uploaded
+5. **DanTDM, Dan Rhodes and Mister Max** are the channels with the most views
+6. Entertainment and music channels are useful for broader reach, as the channels posting consistently on their platforms generatE the most engagement. 
 
 
 
-## Recommendations 
-
-- What do you recommend based on the insights gathered? 
+## Recommendation
   
-1. Dan Rhodes is the best YouTube channel to collaborate with if we want to maximize visbility because this channel has the most YouTube subscribers in the UK
-2. Although GRM Daily, Man City and Yogcasts are regular publishers on YouTube, it may be worth considering whether collaborating with them with the current budget caps are worth the effort, as the potential return on investments is significantly lower compared to the other channels.
-3. Mister Max is the best YouTuber to collaborate with if we're interested in maximizing reach, but collaborating with DanTDM and Dan Rhodes may be better long-term options considering the fact that they both have large subscriber bases and are averaging significantly high number of views.
-4. The top 3 channels to form collaborations with are NoCopyrightSounds, DanTDM and Dan Rhodes based on this analysis, because they attract the most engagement on their channels consistently.
+1. Celebrity channels would have been great to partner with because of their massive reach but it would cost beyond our budget.
+2. Dan Rhodes is the best YouTube channel to collaborate with if we want to maximize visibility because this channel has the most YouTube subscribers in the UK
+3. Although GRM Daily, Man City, and Yogcasts are regular publishers on YouTube, with the budget, these channels may not return good interest rates as the potential ROI is significantly lower compared to other channels.
+4. Mister Max is the best YouTuber to collaborate with if we're interested in maximizing reach, but collaborating with DanTDM and Dan Rhodes may be better long-term options considering the fact that they both have large subscriber bases and are averaging significantly higher number of views.
+5. The top 3 channels to form collaborations with are NoCopyrightSounds, DanTDM and Dan Rhodes based on this analysis, because they attract the most engagement on their channels consistently.
 
 
 ### Potential ROI 
@@ -525,7 +521,7 @@ We discovered that
 
 1. Setting up a collaboration deal with Dan Rhodes would make the client a net profit of $1,065,000 per video
 2. An influencer marketing contract with Mister Max can see the client generate a net profit of $1,276,000
-3. If we go with a product placement campaign with DanTDM, this could  generate the client approximately $484,000 per video. If we advance with an influencer marketing campaign deal instead, this would make the client a one-off net profit of $404,000.
+3. If we go with a product placement campaign with DanTDM, this could  generate the client approximately $484,000 per video.
 4. NoCopyrightSounds could profit the client $642,000 per video too (which is worth considering) 
 
 
@@ -534,9 +530,9 @@ We discovered that
 ### Action plan
 - What course of action should we take and why?
 
-Based on our analysis, we beieve the best channel to advance a long-term partnership deal with to promote the client's products is the Dan Rhodes channel. 
+Based on our analysis, the best channel to advance a long-term partnership deal with to promote the client's products is the Dan Rhodes channel. 
 
-We'll have conversations with the marketing client to forecast what they also expect from this collaboration. Once we observe we're hitting the expected milestones, we'll advance with potential partnerships with DanTDM, Mister Max and NoCopyrightSounds channels in the future.   
+We'll have conversations with the marketing client to forecast what they expect from this collaboration. Once we observe we're hitting the expected milestones, we'll advance with potential partnerships with DanTDM, Mister Max, and NoCopyrightSounds channels.   
 
 - What steps do we take to implement the recommended decisions effectively?
 
@@ -544,7 +540,7 @@ We'll have conversations with the marketing client to forecast what they also ex
 1. Reach out to the teams behind each of these channels, starting with Dan Rhodes
 2. Negotiate contracts within the budgets allocated to each marketing campaign
 3. Kick off the campaigns and track each of their performances against the KPIs
-4. Review how the campaigns have gone, gather insights and optimize based on feedback from converted customers and each channel's audiences 
+4. Review how the campaigns have gone, gather insights, and optimize based on feedback from converted customers and each channel's audiences 
 
 
 
